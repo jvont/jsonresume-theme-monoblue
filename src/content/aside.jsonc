@@ -1,0 +1,21 @@
+{
+  "interests": [
+    {
+      "name": "Programming Language Theory",
+      "keywords": [
+        "LISP"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "name": "Web Development",
+      "level": "",
+      "keywords": [
+        "HTML",
+        "CSS",
+        "Javascript"
+      ]
+    }
+  ]
+}

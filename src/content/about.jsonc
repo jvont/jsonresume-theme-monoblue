@@ -1,0 +1,26 @@
+{
+  "name": "Johann von Tiesenhausen",
+  "title": "Programmer",
+  "image": "",
+  "email": "johannvont@gmail.com",
+  "phone": "647-230-5711",
+  "summary": "",
+  "location": "Kingston, Canada",
+  "contact": [
+    {
+      "network": "Gmail",
+      "username": "johannvont@gmail.com",
+      "url": "mailto:johannvont@gmail.com"
+    },
+    {
+      "network": "Github",
+      "username": "jvont",
+      "url": "https://github.com/jvont/"
+    },
+    {
+      "network": "Github Pages",
+      "username": "jvont.github.io",
+      "url": "https://jvont.github.io"
+    }
+  ]
+}

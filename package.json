@@ -1,0 +1,13 @@
+{
+  "name": "resume",
+  "scripts": {
+    "build": "node index.js",
+    "clean": "rm -rf build"
+  },
+  "dependencies": {
+    "handlebars": "^4.7.7",
+    "jsonc-parser": "^3.0.0",
+    "puppeteer": "^13.6.0",
+    "sass": "^1.50.1"
+  }
+}

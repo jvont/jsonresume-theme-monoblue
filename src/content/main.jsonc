@@ -1,0 +1,100 @@
+{
+  "Education": [
+    {
+      "title": "The York School",
+      "subtitle": "IB Diploma",
+      "url": "https://www.yorkschool.com/",
+      "start": "2002",
+      "end": "2014"
+    },
+    {
+      "title": "Queen's University",
+      "subtitle": "Bachelor of Applied Science, Mechanical Engineering",
+      "url": "https://me.queensu.ca/",
+      "start": "2014-09",
+      "end": "2018-05"
+    },
+    {
+      "title": "Queen's University",
+      "subtitle": "Master of Applied Science, Mechanical Engineering",
+      "url": "https://me.queensu.ca/",
+      "start": "2019-01",
+      "end": "2022-05"
+    },
+    {
+      "title": "Queen's University",
+      "subtitle": "Bachelor of Computing",
+      "url": "https://www.cs.queensu.ca/",
+      "start": "2021-01",
+      "end": "2022-05"
+    }
+  ],
+  // "Projects": [
+  //   {
+  //     "title": "Scheme-y",
+  //     "subtitle": "",
+  //     "url": "https://github.com/jvont/scheme-y",
+  //     "description": "An implementation of Scheme, adhering to a subset of R7RS.",
+  //     "notes": [
+  //       "Bytecode compiler and interpreter",
+  //       "Generational garbage collector"
+  //     ],
+  //     "organization": "",
+  //     "position": "Sole developer",
+  //     "start": "2022",
+  //     "end": "2022"
+  //   },
+  //   {
+  //     "title": "dtw-live",
+  //     "subtitle": "",
+  //     "url": "https://github.com/13jvt/dtw-live",
+  //     "description": "Scikit-learn plugin for real-time segmentation and classification using Dynamic Time Warping.",
+  //     "notes": [],
+  //     "organization": "Ingenuity Labs Research Institute",
+  //     "position": "Graduate Student",
+  //     "start": "2019-01",
+  //     "end": "2022-05"
+  //   }
+  // ],
+  "Publications": [
+    {
+      "title": "CCECE 2020",
+      "subtitle": "Hand Gesture-Based Control of a Front-End Loader",
+      "url": "https://ieeexplore.ieee.org/document/9255828",
+      "description": "Designed and applied an instrumented glove to the excavation process of a Front-End Loader.",
+      "start": "2020-11-19",
+      "end": ""
+    }
+  ],
+  "References": [
+    {
+      "title": "Person",
+      "description": "Manager at place"
+    }
+  ],
+  "Volunteer": [
+    {
+      "title": "CoderDojo",
+      "subtitle": "Mentor",
+      "url": "https://coderdojo.com/",
+      "description": "",
+      "notes": [
+        "Helped young learners develop a passion for coding.",
+        "Used Python and Lua to work on a variety of creative projects."
+      ],
+      "start": "2021",
+      "end": "present"
+    }
+  ],
+  "Work": [
+    {
+      "title": "Teaching Assistant",
+      "subtitle": "Queen's University, Department of Mechanical and Materials Engineering",
+      "url": "",
+      "description": "",
+      "notes": [],
+      "start": "2018-09",
+      "end": "2021-05"
+    }
+  ]
+}
