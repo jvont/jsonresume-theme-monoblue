@@ -1,0 +1,12 @@
+
+.float-container {
+  .float-left { float: left; }
+  .float-right { float: right; }
+  overflow: auto;
+
+  &:after {  // clearfix hack
+    content: "";
+    clear: both;
+    display: table;
+  }
+}

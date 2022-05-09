@@ -9,6 +9,17 @@ const sass = require('sass');
 const SRC = `${__dirname}/src`;
 const BUILD = `${__dirname}/build`;
 
+// register partial templates
+async function registerPartials(dir) {
+  const partials = await fs.readdir(dir);
+  return await partials.forEach(async file => {
+    const name = path.parse(file).name;
+    const template = await fs.readFile(path.join(dir, file), 'utf-8');
+
+    handlebars.registerPartial(name, template);
+  }, {});
+}
+
 // parse json content
 async function parseContent(dir) {
   const content = await fs.readdir(dir);
@@ -36,15 +47,16 @@ async function html2pdf(html) {
   return pdf;
 }
 
-// generate (output) html and pdf versions of resume
-async function generate() {
+// build html and pdf versions of resume
+(async function() {
   fs.mkdir(BUILD).catch(_ => {});
 
   // render html
   const context = await parseContent(`${SRC}/content`);
-  context.css = sass.compile(`${SRC}/styles.scss`).css;
+  context.css = sass.compile(`${SRC}/styles/main.scss`).css;
 
-  const input = await fs.readFile(`${SRC}/index.hbs`, 'utf-8');
+  await registerPartials(`${SRC}/templates/partials`);
+  const input = await fs.readFile(`${SRC}/templates/index.hbs`, 'utf-8');
   const html = handlebars.compile(input)(context);
   
   // save to file
@@ -53,6 +65,4 @@ async function generate() {
   // generate pdf
   const pdf = await html2pdf(html);
   await fs.writeFile(`${BUILD}/resume.pdf`, pdf);
-}
-
-generate();
+})();

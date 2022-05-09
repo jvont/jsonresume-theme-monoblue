@@ -11,22 +11,22 @@
       "title": "Queen's University",
       "subtitle": "Bachelor of Applied Science, Mechanical Engineering",
       "url": "https://me.queensu.ca/",
-      "start": "2014-09",
-      "end": "2018-05"
+      "start": "2014/09",
+      "end": "2018/05"
     },
     {
       "title": "Queen's University",
       "subtitle": "Master of Applied Science, Mechanical Engineering",
       "url": "https://me.queensu.ca/",
-      "start": "2019-01",
-      "end": "2022-05"
+      "start": "2019/01",
+      "end": "2022/05"
     },
     {
       "title": "Queen's University",
       "subtitle": "Bachelor of Computing",
       "url": "https://www.cs.queensu.ca/",
-      "start": "2021-01",
-      "end": "2022-05"
+      "start": "2021/01",
+      "end": "2022/05"
     }
   ],
   // "Projects": [
@@ -52,8 +52,8 @@
   //     "notes": [],
   //     "organization": "Ingenuity Labs Research Institute",
   //     "position": "Graduate Student",
-  //     "start": "2019-01",
-  //     "end": "2022-05"
+  //     "start": "2019/01",
+  //     "end": "2022/05"
   //   }
   // ],
   "Publications": [
@@ -62,16 +62,16 @@
       "subtitle": "Hand Gesture-Based Control of a Front-End Loader",
       "url": "https://ieeexplore.ieee.org/document/9255828",
       "description": "Designed and applied an instrumented glove to the excavation process of a Front-End Loader.",
-      "start": "2020-11-19",
+      "start": "2020/11/19",
       "end": ""
     }
   ],
-  "References": [
-    {
-      "title": "Person",
-      "description": "Manager at place"
-    }
-  ],
+  // "References": [
+  //   {
+  //     "title": "Person",
+  //     "description": "Manager at place"
+  //   }
+  // ],
   "Volunteer": [
     {
       "title": "CoderDojo",
@@ -91,8 +91,11 @@
       "title": "Teaching Assistant",
       "subtitle": "Queen's University, Department of Mechanical and Materials Engineering",
       "url": "",
-      "description": "",
-      "notes": [],
+      "description": "Worked as a teaching assistant for two courses, over several semesters.",
+      "notes": [
+        "MECH 399: Mech Eng Lab II",
+        "MECH 496: Musculoskeletal Biomechanics"
+      ],
       "start": "2018-09",
       "end": "2021-05"
     }

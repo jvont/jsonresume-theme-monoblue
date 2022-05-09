@@ -1,0 +1,45 @@
+body {
+  width: 8.5in;
+  // height: 11in;
+  // padding: 0.25in;
+
+  display: grid;
+  grid-template-columns: 0 auto;  // 2in auto;
+  grid-template-rows: fit-content(0) auto fit-content(0);
+}
+
+header {
+  background-color: cornflowerblue;
+  text-align: center;
+
+  grid-column-start: span 2;
+  grid-row: 1;
+}
+
+main {
+  padding: 0.25in;
+
+  grid-column: 2;
+  grid-row: 2;
+
+  .section {
+  
+    .section-entry {
+      margin: 1em 0;
+    }
+  }
+}
+
+aside {
+  
+
+  grid-column: 1;
+  grid-row: 2;
+}
+
+footer {
+
+
+  grid-column-start: span 2;
+  grid-row: 3;
+}
