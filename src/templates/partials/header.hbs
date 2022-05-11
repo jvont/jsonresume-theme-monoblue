@@ -1,14 +1,14 @@
 <header>
   <h1>{{name}}</h1>
   <h2>{{position}}</h2>
-  <ul>
-    {{#each content}}
-      <li>
-        {{#if url}}<a href="{{url}}">{{/if}}
-          {{name}}
-        {{#if url}}</a>{{/if}}
-      </li>
-    {{/each}}
-  </ul>
-  <h3>{{location}}</h3>
+  {{#each content}}
+    <h3>
+      {{#if type}}
+        {{type}}:
+      {{/if}}
+      {{#if url}}<a href="{{url}}">{{/if}}
+        {{name}}
+      {{#if url}}</a>{{/if}}
+    </h3>
+  {{/each}}
 </header>
