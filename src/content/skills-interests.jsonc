@@ -1,5 +1,5 @@
 {
-  "interests": [
+  "Interests": [
     {
       "name": "Programming Language Theory",
       "keywords": [
@@ -7,7 +7,7 @@
       ]
     }
   ],
-  "skills": [
+  "Skills": [
     {
       "name": "Web Development",
       "level": "",

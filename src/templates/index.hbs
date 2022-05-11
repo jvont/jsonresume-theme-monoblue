@@ -2,29 +2,22 @@
 <html>
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>{{css}}</style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-  <header>
-    {{#with about}}
-      <h1>{{name}}</h1>
-    {{/with}}
-  </header>
+  {{> header about}}
   <main>
-    {{#each main}}
+    {{#each experience}}
       {{> section this}}
     {{/each}}
   </main>
   {{!-- <aside>
-    {{#each aside}}
+    {{#each skills-interests}}
+      {{> section this}}
     {{/each}}
   </aside> --}}
-  {{!-- <footer>
-    <ul>
-      {{#each references}}
-        <li>{{title}}, {{description}}</li>
-      {{/each}}
-    </ul>
-  </footer> --}}
+  {{!-- <footer></footer> --}}
 </body>
 </html>

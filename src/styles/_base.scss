@@ -1,16 +1,20 @@
-* {
-  margin: 0;
-  box-sizing: border-box;
-}
+$primary-font: Helvetica, Arial, sans-serif;
+$secondary-font: Verdana, Tahoma, sans-serif;
+
+// * { border: 1px solid red; }
 
 body {
-  // border: 1px solid red;
-
   font-family: $secondary-font;
   font-size: 11pt;
 }
 
-h1, h2 {  // header/sections
+header {
+  background-color: cornflowerblue;
+  color: aliceblue;
+  text-align: center;
+}
+
+h1, h2 {
   font-family: $primary-font;
   font-size: 16pt;
   font-weight: 100;
@@ -21,4 +25,17 @@ h1, h2 {  // header/sections
 h3, h4, h5 {
   font-size: 11pt;
   font-weight: 500;
+}
+
+a {
+  color: aliceblue;
+  text-decoration: none;
+    
+  &:hover {
+    color: silver;
+  }
+
+  &:active {
+    color: gray;
+  }
 }

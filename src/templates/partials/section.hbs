@@ -1,18 +1,16 @@
-<div class="section">
+<section>
   <h2>{{@key}}</h2>
   {{#each this}}
-    <div class="section-entry">
-      <div class="float-container">
-        <h3 class="float-left">{{title}}</h3>
-        <h5 class="float-right">{{start}} {{#if end}}&mdash; {{end}}{{/if}}</h5>
-      </div>
-      <h4>{{subtitle}}</h4>
-      {{description}}
-      <ul>
+    <div class="section-header">
+      <h3>{{title}}</h3>
+      <h5>{{start}} {{#if end}}&mdash; {{end}}{{/if}}</h5>
+    </div>
+    <h4>{{subtitle}}</h4>
+    {{description}}
+    <ul>
       {{#each notes}}
         <li>{{this}}</li>
       {{/each}}
-      </ul>
-    </div>
+    </ul>
   {{/each}}
-</div>
+</section>
