@@ -37,9 +37,9 @@ async function html2pdf(html) {
 
   const page = await browser.newPage();
   await page.setContent(html, {waitUntil: 'domcontentloaded'});
-  // await page.emulateMedia('screen');
   const pdf = await page.pdf({
-    format: 'Letter',
+    // format: 'Letter',
+    preferCSSPageSize: true,
     printBackground: true
   });
 
@@ -51,10 +51,12 @@ async function html2pdf(html) {
 (async function() {
   fs.mkdir(BUILD).catch(_ => {});
 
-  // render html
+  // parse content/css
   const context = await parseContent(`${SRC}/content`);
-  context.css = sass.compile(`${SRC}/styles/main.scss`).css;
+  const styles = await sass.compileAsync(`${SRC}/styles/main.scss`);
+  context.css = styles.css;
 
+  // render html
   await registerPartials(`${SRC}/templates/partials`);
   const input = await fs.readFile(`${SRC}/templates/index.hbs`, 'utf-8');
   const html = handlebars.compile(input)(context);

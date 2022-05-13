@@ -1,3 +1,15 @@
+// dimensions
+
+$page-width: 8.5in;
+$page-height: auto; // 11in;
+
+$inner-spacing: 0.25in;
+$outer-spacing: 0.45in;
+$header-padding: $inner-spacing $outer-spacing;
+$main-padding: $outer-spacing $outer-spacing;
+$section-margin: $inner-spacing 0;
+
+
 // fonts
 
 $primary-font: Helvetica, Arial, sans-serif;
@@ -6,6 +18,5 @@ $secondary-font: Verdana, Tahoma, sans-serif;
 // header colors
 
 $header-color: cornflowerblue;
-
 $header-text-color: aliceblue;
 $header-text-hover: silver;

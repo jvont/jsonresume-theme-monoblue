@@ -1,0 +1,19 @@
+@page {
+  size: Letter;
+  margin-top: $outer-spacing;
+}
+
+@page:first {
+  margin: 0;
+  margin-bottom: $outer-spacing;
+}
+
+@media print {
+  section {
+    // page-break-inside: avoid;
+
+    .entry {
+      page-break-inside: avoid;
+    }
+  }
+}

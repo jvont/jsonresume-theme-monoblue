@@ -1,16 +1,15 @@
-
-
 // * { border: 1px solid red; }
 
 body {
   font-family: $secondary-font;
   font-size: 11pt;
+  font-weight: 100;
 }
 
 header {
+  text-align: center;
   background-color: cornflowerblue;
   color: $header-text-color;
-  text-align: center;
 
   a {
     color: $header-text-color;
@@ -22,15 +21,27 @@ header {
   }
 }
 
-h1, h2 {
-  font-family: $primary-font;
-  font-size: 16pt;
-  font-weight: 100;
-  
-  line-height: 2em;
+summary {
+  text-align: justify;
 }
 
-h3, h4, h5 {
+h1, h2 {
+  font-family: $primary-font;
+  font-weight: 100;
+  font-size: 16pt;
+}
+
+h2 {
+  font-size: 14pt;
+}
+
+h3, h4 {
+  font-family: $secondary-font;
+  font-weight: 100;
+  font-size: 12pt;
+}
+
+h4 {
   font-size: 11pt;
-  font-weight: 500;
+  font-style: italic;
 }
