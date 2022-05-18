@@ -1,13 +1,12 @@
 {
-  "name": "resume",
-  "scripts": {
-    "build": "node index.js",
-    "clean": "rm -rf build"
-  },
+  "name": "jsonresume-theme-bare",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "Johann von Tiesenhausen",
+  "license": "MIT",
   "dependencies": {
     "handlebars": "^4.7.7",
-    "jsonc-parser": "^3.0.0",
-    "puppeteer": "^13.6.0",
-    "sass": "^1.50.1"
+    "sass": "^1.51.0"
   }
 }
