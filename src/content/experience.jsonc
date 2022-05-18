@@ -30,7 +30,7 @@
     {
       "title": "Teaching Assistant",
       "subtitle": "Queen's University, Department of Mechanical and Materials Engineering",
-      "description": "Worked as a teaching assistant for two courses, over several semesters.",
+      "description": "Ran tutorials and labs for two courses over multiple semesters. Assisted students in achieving key learning outcomes for each course.",
       "notes": [
         "MECH 399: Mech Eng Lab II",
         "MECH 496: Musculoskeletal Biomechanics"
@@ -44,7 +44,10 @@
       "title": "Hand Gesture-Based Control of a Front-End Loader",
       "subtitle": "CCECE 2020",
       "url": "https://ieeexplore.ieee.org/document/9255828",
-      "description": "Designed and applied an instrumented glove to the excavation process of a Front-End Loader.",
+      "description": "An implementation of Scheme, adhering to a subset of R7RS.",
+      "notes": [
+        "Designed and applied an instrumented glove to the excavation process of a Front-End Loader."
+      ],
       "start": "2020/11/19",
       "end": ""
     }
