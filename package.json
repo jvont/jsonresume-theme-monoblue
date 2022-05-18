@@ -1,7 +1,7 @@
 {
   "name": "jsonresume-theme-bare",
   "version": "1.0.0",
-  "description": "",
+  "description": "Minimalistic theme for JSON Resume",
   "main": "index.js",
   "author": "Johann von Tiesenhausen",
   "license": "MIT",
