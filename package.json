@@ -4,6 +4,10 @@
   "description": "Minimalistic theme for JSON Resume",
   "main": "index.js",
   "author": "Johann von Tiesenhausen",
+  "scripts": {
+    "export": "resume export resume.html --theme .",
+    "clean": "rm -f resume.html"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/jvont/jsonresume-theme-bare"
