@@ -5,8 +5,7 @@
   "main": "index.js",
   "author": "Johann von Tiesenhausen",
   "scripts": {
-    "export": "resume export resume.html --theme .",
-    "clean": "rm -f resume.html"
+    "test": "resume export resume.html --theme ."
   },
   "repository": {
     "type": "git",

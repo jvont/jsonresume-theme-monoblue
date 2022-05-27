@@ -1,32 +1,41 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+
+  // border: 1px solid red;
+}
+
 body {
+  width: 8.5in;
+  height: auto;
+
   font-family: Helvetica, Arial, sans-serif;
   font-size: 11pt;
   font-weight: 100;
+
 }
 
-#basics {
-  // text-align: center;
-  background-color: $basics-color;
-  color: $basics-text-color;
+section {
+  margin: $inner-spacing $outer-spacing;
 
-  a {
-    color: $basics-text-color;
-    text-decoration: none;
-  
-    &:hover {
-      color: $basics-a-hover;
-    }
+}
+
+a {
+  color: #0084ff;
+  text-decoration: none;
+
+  &:hover {
+    color: #016fd6;
+    text-decoration: underline;
   }
 }
 
-// #skills
-// #work
-// #projects
-// #volunteer
-// #education
-// #awards
-// #certificates
-// #publications
-// #languages
-// #interests
-// #references
+.clearfix {
+  overflow: auto;
+
+  &:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+}

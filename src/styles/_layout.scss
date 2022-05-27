@@ -1,42 +1,66 @@
-* {
-  margin: 0;
-  box-sizing: border-box;
-}
+#basics {
+  color: #ffffff;
 
-body {
-  width: $page-width;
-  height: $page-height;
-}
+  h2 {
+    color: #2ea69d;
+    margin-bottom: 1em;
+  }
 
-header {
-  padding: $header-padding;
-}
+  #header {
+    padding: $inner-spacing $outer-spacing;
+    background-color: #374458;
+  }
 
-main {
-  padding: $main-padding;
+  #profiles {
+    padding: $inner-spacing $outer-spacing;
+    background-color: #2b343f;
 
-  section {
-    margin: $section-margin;
-
-    .entry {
-      margin: 0.5em 0;
-
-      .entry-header {
-        margin: 0.5em 0;
-
-        // display: flex;
-        // justify-content: space-between;
-      }
-    }
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-items: start;
   }
 }
 
-.clearfix {
-  overflow: auto;
+#skills {
 
-  &:after {
-    content: "";
-    clear: both;
-    display: table;
-  }
+}
+
+#work {
+
+}
+
+#volunteer {
+
+}
+
+#certificates {
+
+}
+
+#education {
+
+}
+
+#publications {
+
+}
+
+#awards {
+
+}
+
+#projects {
+
+}
+
+#languages {
+
+}
+
+#interests {
+
+}
+
+#references {
+
 }

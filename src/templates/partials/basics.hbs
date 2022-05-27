@@ -1,90 +1,55 @@
 {{#resume.basics}}
-	<h1>{{name}}</h1>
-	<h2>{{label}}</h2>
 	<section id="basics">
-		<div class="contact">
-		{{#if website}}
-		<div class="website">
-			<strong>Website</strong>
-			{{website}}
-		</div>
-		{{/if}}
-		{{#if email}}
-		<div class="email">
-			<strong>Email</strong>
-			{{email}}
-		</div>
-		{{/if}}
-		{{#if phone}}
-		<div class="phone">
-			<strong>Phone</strong>
-			{{phone}}
-		</div>
-		{{/if}}
-		</div>
-		{{#if summary}}
-		<div class="summary">
+		<div id="header">
+			<h1 id="name">{{name}}</h1>
+			<h2 id="label">{{label}}</h2>
 			<p>{{summary}}</p>
 		</div>
-		{{/if}}
-		{{#location}}
-		<h3>Location</h3>
-		<section id="location">
-			{{#if address}}
-			<div class="address">
-				<strong>Address</strong>
-				{{address}}
-			</div>
+		<div id="profiles">
+			{{#location}}
+				<div id="location">
+					<span class="fas fa-location-dot"></span>
+					{{#if city}}
+						<span>{{city}},</span>
+					{{/if}}
+					{{#if region}}
+						<span>{{region}}</span>
+					{{/if}}
+					{{#if countryCode}}
+						<span>{{countryCode}}</span>
+					{{/if}}
+				</div>
+			{{/location}}
+			{{#if phone}}
+				<div class="item">
+					<span class="fas fa-mobile-alt"></span>
+					{{phone}}
+				</div>
 			{{/if}}
-			{{#if postalCode}}
-			<div class="postalCode">
-				<strong>Postal code</strong>
-				{{postalCode}}
-			</div>
+			{{#if email}}
+				<div class="item">
+					<span class="far fa-envelope"></span>
+					<a href="mailto:{{email}}">{{email}}</a>
+				</div>
 			{{/if}}
-			{{#if city}}
-			<div class="city">
-				<strong>City</strong>
-				{{city}}
-			</div>
+			{{#if url}}
+				<div class="item">
+					<span class="fas fa-external-link-alt"></span>
+					<a target="_blank" href="{{url}}">{{url}}</a>
+				</div>
 			{{/if}}
-			{{#if countryCode}}
-			<div class="countryCode">
-				<strong>Country code</strong>
-				{{countryCode}}
-			</div>
-			{{/if}}
-			{{#if region}}
-			<div class="region">
-				<strong>Region</strong>
-				{{region}}
-			</div>
-			{{/if}}
-		</section>
-		{{/location}}
-		{{#if profiles.length}}
-		<h3>Profiles</h3>
-		<section id="profiles">
 			{{#each profiles}}
-			<div class="item">
-				{{#if network}}
-				<strong class="network">
-					{{network}}
-				</strong>
-				{{/if}}
 				{{#if username}}
-				<div class="username">
-					{{username}}
-				</div>
+					<div class="item">
+						<span class="fab fa-{{fa-convert network}}"></span>
+						{{#if url}}
+							<a target="_blank" href="{{url}}">{{username}}</a>
+						{{else}}
+							{{username}}
+						{{/if}}
+					</div>
 				{{/if}}
-				{{#if url}}
-				<div class="url">
-					<a href="{{url}}">Link</a>
-				</div>
-				{{/if}}
-			</div>
 			{{/each}}
-		</section>
-		{{/if}}
+		</div>
 	</section>
 {{/resume.basics}}

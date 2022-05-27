@@ -5,6 +5,10 @@ const sass = require('sass');
 
 const SRC = `${__dirname}/src`;
 
+Handlebars.registerHelper('fa-convert',
+  str => str.replace(/\s/g, '-').toLowerCase()
+);
+
 function render(resume) {
   const css = sass.compile(`${SRC}/styles/main.scss`).css;
   const tpl = fs.readFileSync(`${SRC}/templates/index.hbs`, 'utf-8');
