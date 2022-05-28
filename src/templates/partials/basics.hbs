@@ -1,55 +1,53 @@
-{{#resume.basics}}
-	<section id="basics">
-		<div id="header">
-			<h1 id="name">{{name}}</h1>
-			<h2 id="label">{{label}}</h2>
-			<p>{{summary}}</p>
-		</div>
-		<div id="profiles">
-			{{#location}}
-				<div id="location">
-					<span class="fas fa-location-dot"></span>
-					{{#if city}}
-						<span>{{city}},</span>
-					{{/if}}
-					{{#if region}}
-						<span>{{region}}</span>
-					{{/if}}
-					{{#if countryCode}}
-						<span>{{countryCode}}</span>
-					{{/if}}
-				</div>
-			{{/location}}
-			{{#if phone}}
-				<div class="item">
-					<span class="fas fa-mobile-alt"></span>
-					{{phone}}
-				</div>
-			{{/if}}
-			{{#if email}}
-				<div class="item">
-					<span class="far fa-envelope"></span>
-					<a href="mailto:{{email}}">{{email}}</a>
-				</div>
-			{{/if}}
-			{{#if url}}
-				<div class="item">
-					<span class="fas fa-external-link-alt"></span>
-					<a target="_blank" href="{{url}}">{{url}}</a>
-				</div>
-			{{/if}}
-			{{#each profiles}}
-				{{#if username}}
-					<div class="item">
-						<span class="fab fa-{{fa-convert network}}"></span>
-						{{#if url}}
-							<a target="_blank" href="{{url}}">{{username}}</a>
-						{{else}}
-							{{username}}
-						{{/if}}
-					</div>
+{{#ifwith resume.basics}}
+	<header>
+		<h1 id="name">{{name}}</h1>
+		<h2 id="label">{{label}}</h2>
+		<p>{{summary}}</p>
+	</header>
+	<nav>
+		{{#ifwith location}}
+			<div>
+				<span class="fas fa-location-dot"></span>
+				{{#if city}}
+					<span>{{city}},</span>
 				{{/if}}
-			{{/each}}
-		</div>
-	</section>
-{{/resume.basics}}
+				{{#if region}}
+					<span>{{region}}</span>
+				{{/if}}
+				{{#if countryCode}}
+					<span>{{countryCode}}</span>
+				{{/if}}
+			</div>
+		{{/ifwith}}
+		{{#if phone}}
+			<div>
+				<span class="fas fa-mobile-alt"></span>
+				{{phone}}
+			</div>
+		{{/if}}
+		{{#if email}}
+			<div>
+				<span class="far fa-envelope"></span>
+				<a href="mailto:{{email}}">{{email}}</a>
+			</div>
+		{{/if}}
+		{{#if url}}
+			<div>
+				<span class="fas fa-external-link-alt"></span>
+				<a target="_blank" href="{{url}}">{{url}}</a>
+			</div>
+		{{/if}}
+		{{#each profiles}}
+			{{#if username}}
+				<div>
+					<span class="fab fa-{{fa-convert network}}"></span>
+					{{#if url}}
+						<a target="_blank" href="{{url}}">{{username}}</a>
+					{{else}}
+						{{username}}
+					{{/if}}
+				</div>
+			{{/if}}
+		{{/each}}
+	</nav>
+{{/ifwith}}

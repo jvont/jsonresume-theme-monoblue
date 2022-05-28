@@ -5,9 +5,15 @@ const sass = require('sass');
 
 const SRC = `${__dirname}/src`;
 
-Handlebars.registerHelper('fa-convert',
-  str => str.replace(/\s/g, '-').toLowerCase()
-);
+Handlebars.registerHelper('ifwith', function(context, options) {
+  if (context && Object.keys(context).length) {
+    return options.fn(context);
+  }
+});
+
+Handlebars.registerHelper('fa-convert', function(string) {
+  return string.replace(/\s/g, '-').toLowerCase()
+});
 
 function render(resume) {
   const css = sass.compile(`${SRC}/styles/main.scss`).css;

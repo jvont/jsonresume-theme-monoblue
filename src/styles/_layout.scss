@@ -1,66 +1,33 @@
-#basics {
+body > header, nav {
   color: #ffffff;
+  width: 100%;
+  margin: 0;
+  padding: 0 $outer-spacing;
+}
 
-  h2 {
-    color: #2ea69d;
-    margin-bottom: 1em;
+body > header {
+  background-color: $header-color;
+  padding-top: $inner-spacing;
+  padding-bottom: $inner-spacing;
+
+  & > h2 {
+    color: $accent-color;
   }
 
-  #header {
-    padding: $inner-spacing $outer-spacing;
-    background-color: #374458;
-  }
-
-  #profiles {
-    padding: $inner-spacing $outer-spacing;
-    background-color: #2b343f;
-
-    display: grid;
-    grid-template-columns: auto auto;
-    justify-items: start;
+  & > p {
+    text-align: justify;
+    margin-top: 1em;
   }
 }
 
-#skills {
+nav {
+  background-color: $profiles-color;
+  padding-top: $inner-spacing;
+  padding-bottom: $inner-spacing;
 
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-items: start;
 }
 
-#work {
 
-}
-
-#volunteer {
-
-}
-
-#certificates {
-
-}
-
-#education {
-
-}
-
-#publications {
-
-}
-
-#awards {
-
-}
-
-#projects {
-
-}
-
-#languages {
-
-}
-
-#interests {
-
-}
-
-#references {
-
-}

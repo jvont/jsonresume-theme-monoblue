@@ -1,1 +1,60 @@
-
+{{#ifwith resume.projects}}
+	<section>
+		<header>
+			<h2>Projects</h2>
+		</header>
+		{{#each this}}
+			<section>
+				<header>
+          <div class="split">
+            <h3>
+              {{#if name}}
+                <span>{{name}}</span>
+              {{/if}}
+              {{#if entity}}
+                <span>| {{entity}}</span>
+              {{/if}}
+            </h3>
+            <div>
+              {{#if startDate}}
+                <span>{{startDate}}</span>
+              {{/if}}
+              {{#if endDate}}
+                <span>- {{endDate}}</span>
+              {{else}}
+                <span>- Present</span>
+              {{/if}}
+            </div>
+          </div>
+          {{#if url}}
+            <a target="_blank" href="{{url}}">{{url}}</a>
+					{{/if}}
+				</header>
+				{{#if description}}
+					<p>{{description}}</p>
+				{{/if}}
+				{{#ifwith highlights}}
+					<ul>
+						{{#each this}}
+							<li>{{.}}</li>
+						{{/each}}
+					</ul>
+				{{/ifwith}}
+        {{#ifwith roles}}
+					<ul>
+						{{#each this}}
+							<li>{{.}}</li>
+						{{/each}}
+					</ul>
+				{{/ifwith}}
+        {{#ifwith keywords}}
+					<ul>
+						{{#each this}}
+							<li>{{.}}</li>
+						{{/each}}
+					</ul>
+				{{/ifwith}}
+			</section>
+		{{/each}}
+	</section>
+{{/ifwith}}

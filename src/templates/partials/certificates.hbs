@@ -1,0 +1,29 @@
+{{#ifwith resume.certificates}}
+	<section>
+		<header>
+			<h2>Certificates</h2>
+		</header>
+		{{#each this}}
+			<section>
+				<header>
+					<div class="split">
+						<h3>
+							{{#if name}}
+								<span>{{name}}</span>
+							{{/if}}
+							{{#if issuer}}
+								<span>| {{issuer}}</span>
+							{{/if}}
+						</h3>
+						{{#if date}}
+							<span>{{date}}</span>
+						{{/if}}
+					</div>
+          {{#if url}}
+						<a target="_blank" href="{{url}}">{{url}}</a>
+					{{/if}}
+				</header>
+			</section>
+		{{/each}}
+	</section>
+{{/ifwith}}

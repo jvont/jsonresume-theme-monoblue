@@ -1,29 +1,29 @@
-{{#if resume.awards.length}}
-<section id="awards">
-	<h2>Awards</h2>
-	{{#each resume.awards}}
-	<div class="item">
-		{{#if title}}
-		<div class="title">
-			{{title}}
-		</div>
-		{{/if}}
-		{{#if date}}
-		<div class="date">
-			{{date}}
-		</div>
-		{{/if}}
-		{{#if awarder}}
-		<div class="awarder">
-			{{awarder}}
-		</div>
-		{{/if}}
-		{{#if summary}}
-		<div class="summary">
-			<p>{{summary}}</p>
-		</div>
-		{{/if}}
-	</div>
-	{{/each}}
-</section>
-{{/if}}
+{{#ifwith resume.awards}}
+	<section>
+		<header>
+			<h2>Awards</h2>
+		</header>
+		{{#each this}}
+			<section>
+				<header>
+					<div class="split">
+						<h3>
+							{{#if title}}
+								<span>{{title}}</span>
+							{{/if}}
+							{{#if awarder}}
+								<span>| {{awarder}}</span>
+							{{/if}}
+						</h3>
+						{{#if date}}
+							<span>{{date}}</span>
+						{{/if}}
+					</div>
+				</header>
+				{{#if summary}}
+					<p>{{summary}}</p>
+				{{/if}}
+			</section>
+		{{/each}}
+	</section>
+{{/ifwith}}
