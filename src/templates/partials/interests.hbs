@@ -3,21 +3,23 @@
 		<header>
 			<h2>Interests</h2>
 		</header>
-		{{#each this}}
-			<section>
-				<header>
-					{{#if name}}
-						<h3>{{name}}</h3>
-					{{/if}}
-				</header>
-				{{#ifwith keywords}}
-					<ul>
-						{{#each this}}
-							<li>{{.}}</li>
-						{{/each}}
-					</ul>
-				{{/ifwith}}
-			</section>
-		{{/each}}
+		<div id="interests-list">
+			{{#each this}}
+				<section>
+					<header>
+						{{#if name}}
+							<h3>{{name}}</h3>
+						{{/if}}
+					</header>
+					{{#ifwith keywords}}
+						<ul>
+							{{#each this}}
+								<li>{{.}}</li>
+							{{/each}}
+						</ul>
+					{{/ifwith}}
+				</section>
+			{{/each}}
+		</div>
 	</section>
 {{/ifwith}}

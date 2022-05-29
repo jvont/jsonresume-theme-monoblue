@@ -4,9 +4,9 @@
 			<h2>Education</h2>
 		</header>
 		{{#each this}}
-			<section>
+			<div id="education-list">
 				<header>
-					<div class="split">
+					<div class="flex-between">
 						<h3>
 							{{#if studyType}}
 								<span>{{studyType}}</span>
@@ -43,7 +43,7 @@
 						{{/each}}
 					</ul>
 				{{/ifwith}}
-			</section>
+			</div>
 		{{/each}}
 	</section>
 {{/ifwith}}

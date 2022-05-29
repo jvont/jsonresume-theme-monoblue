@@ -4,9 +4,9 @@
 			<h2>Awards</h2>
 		</header>
 		{{#each this}}
-			<section>
+			<div id="awards-list">
 				<header>
-					<div class="split">
+					<div class="flex-between">
 						<h3>
 							{{#if title}}
 								<span>{{title}}</span>
@@ -23,7 +23,7 @@
 				{{#if summary}}
 					<p>{{summary}}</p>
 				{{/if}}
-			</section>
+			</div>
 		{{/each}}
 	</section>
 {{/ifwith}}

@@ -3,46 +3,48 @@
 		<header>
 			<h2>Volunteer</h2>
 		</header>
-		{{#each this}}
-			<section class="work-item">
-				<header>
-					<div class="split">
-						<h3>
-							{{#if organization}}
-								<span>{{organization}}</span>
-							{{/if}}
-							{{#if position}}
-								<span>| {{position}}</span>
-							{{/if}}
-						</h3>
-						<div>
-							{{#if startDate}}
-								<span>{{startDate}}</span>
-							{{/if}}
-							{{#if endDate}}
-								<span>- {{endDate}}</span>
-							{{else}}
-								<span>- Present</span>
-							{{/if}}
+		<div id="volunteer-list">
+			{{#each this}}
+				<section class="work-item">
+					<header>
+						<div class="flex-between">
+							<h3>
+								{{#if organization}}
+									<span>{{organization}}</span>
+								{{/if}}
+								{{#if position}}
+									<span>| {{position}}</span>
+								{{/if}}
+							</h3>
+							<div>
+								{{#if startDate}}
+									<span>{{startDate}}</span>
+								{{/if}}
+								{{#if endDate}}
+									<span>- {{endDate}}</span>
+								{{else}}
+									<span>- Present</span>
+								{{/if}}
+							</div>
 						</div>
-					</div>
-					{{#if url}}
-						<a target="_blank" href="{{url}}">{{url}}</a>
+						{{#if url}}
+							<a target="_blank" href="{{url}}">{{url}}</a>
+						{{/if}}
+					</header>
+					{{#if summary}}
+						<div class="summary">
+							<p>{{summary}}</p>
+						</div>
 					{{/if}}
-				</header>
-				{{#if summary}}
-					<div class="summary">
-						<p>{{summary}}</p>
-					</div>
-				{{/if}}
-				{{#if highlights.length}}
-					<ul class="highlights">
-						{{#each highlights}}
-							<li>{{.}}</li>
-						{{/each}}
-					</ul>
-				{{/if}}
-			</section>
-		{{/each}}
+					{{#if highlights.length}}
+						<ul class="highlights">
+							{{#each highlights}}
+								<li>{{.}}</li>
+							{{/each}}
+						</ul>
+					{{/if}}
+				</section>
+			{{/each}}
+		</div>
 	</section>
 {{/ifwith}}

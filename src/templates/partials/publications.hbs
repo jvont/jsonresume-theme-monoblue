@@ -3,30 +3,32 @@
 		<header>
 			<h2>Publications</h2>
 		</header>
-		{{#each this}}
-			<section>
-				<header>
-					<div class="split">
-						<h3>
-							{{#if name}}
-								<span>{{name}}</span>
+		<div id="publications-list">
+			{{#each this}}
+				<section>
+					<header>
+						<div class="flex-between">
+							<h3>
+								{{#if name}}
+									<span>{{name}}</span>
+								{{/if}}
+								{{#if publisher}}
+									<span>| {{publisher}}</span>
+								{{/if}}
+							</h3>
+							{{#if releaseDate}}
+								<span>{{releaseDate}}</span>
 							{{/if}}
-							{{#if publisher}}
-								<span>| {{publisher}}</span>
-							{{/if}}
-						</h3>
-						{{#if releaseDate}}
-							<span>{{releaseDate}}</span>
+						</div>
+						{{#if url}}
+							<a target="_blank" href="{{url}}">{{url}}</a>
 						{{/if}}
-					</div>
-					{{#if url}}
-						<a target="_blank" href="{{url}}">{{url}}</a>
+					</header>
+					{{#if summary}}
+						<p>{{summary}}</p>
 					{{/if}}
-				</header>
-				{{#if summary}}
-					<p>{{summary}}</p>
-				{{/if}}
-			</section>
-		{{/each}}
+				</section>
+			{{/each}}
+		</div>
 	</section>
 {{/ifwith}}

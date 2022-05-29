@@ -1,53 +1,55 @@
 {{#ifwith resume.basics}}
 	<header>
-		<h1 id="name">{{name}}</h1>
-		<h2 id="label">{{label}}</h2>
+		<h1>{{name}}</h1>
+		<h2>{{label}}</h2>
 		<p>{{summary}}</p>
 	</header>
 	<nav>
-		{{#ifwith location}}
-			<div>
-				<span class="fas fa-location-dot"></span>
-				{{#if city}}
-					<span>{{city}},</span>
-				{{/if}}
-				{{#if region}}
-					<span>{{region}}</span>
-				{{/if}}
-				{{#if countryCode}}
-					<span>{{countryCode}}</span>
-				{{/if}}
-			</div>
-		{{/ifwith}}
-		{{#if phone}}
-			<div>
-				<span class="fas fa-mobile-alt"></span>
-				{{phone}}
-			</div>
-		{{/if}}
-		{{#if email}}
-			<div>
-				<span class="far fa-envelope"></span>
-				<a href="mailto:{{email}}">{{email}}</a>
-			</div>
-		{{/if}}
-		{{#if url}}
-			<div>
-				<span class="fas fa-external-link-alt"></span>
-				<a target="_blank" href="{{url}}">{{url}}</a>
-			</div>
-		{{/if}}
-		{{#each profiles}}
-			{{#if username}}
-				<div>
-					<span class="fab fa-{{fa-convert network}}"></span>
-					{{#if url}}
-						<a target="_blank" href="{{url}}">{{username}}</a>
-					{{else}}
-						{{username}}
+		<ul>
+			{{#ifwith location}}
+				<li>
+					<span class="fas fa-location-dot"></span>
+					{{#if city}}
+						<span>{{city}},</span>
 					{{/if}}
-				</div>
+					{{#if region}}
+						<span>{{region}}</span>
+					{{/if}}
+					{{#if countryCode}}
+						<span>{{countryCode}}</span>
+					{{/if}}
+				</li>
+			{{/ifwith}}
+			{{#if phone}}
+				<li>
+					<span class="fas fa-mobile-alt"></span>
+					{{phone}}
+				</li>
 			{{/if}}
-		{{/each}}
+			{{#if email}}
+				<li>
+					<span class="far fa-envelope"></span>
+					<a href="mailto:{{email}}">{{email}}</a>
+				</li>
+			{{/if}}
+			{{#if url}}
+				<li>
+					<span class="fas fa-external-link-alt"></span>
+					<a target="_blank" href="{{url}}">{{url}}</a>
+				</li>
+			{{/if}}
+			{{#each profiles}}
+				{{#if username}}
+					<li>
+						<span class="fab fa-{{fa-convert network}}"></span>
+						{{#if url}}
+							<a target="_blank" href="{{url}}">{{username}}</a>
+						{{else}}
+							{{username}}
+						{{/if}}
+					</li>
+				{{/if}}
+			{{/each}}
+		</ul>
 	</nav>
 {{/ifwith}}

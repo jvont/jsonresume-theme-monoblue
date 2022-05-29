@@ -4,9 +4,9 @@
 			<h2>Certificates</h2>
 		</header>
 		{{#each this}}
-			<section>
+			<div id="certificates-list">
 				<header>
-					<div class="split">
+					<div class="flex-between">
 						<h3>
 							{{#if name}}
 								<span>{{name}}</span>
@@ -19,11 +19,11 @@
 							<span>{{date}}</span>
 						{{/if}}
 					</div>
-          {{#if url}}
+					{{#if url}}
 						<a target="_blank" href="{{url}}">{{url}}</a>
 					{{/if}}
 				</header>
-			</section>
+			</div>
 		{{/each}}
 	</section>
 {{/ifwith}}

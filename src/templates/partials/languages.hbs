@@ -3,17 +3,19 @@
 		<header>
 			<h2>Languages</h2>
 		</header>
-		{{#each this}}
-			<section>
-				<header>
-					{{#if language}}
-						<h3>{{language}}</h3>
+		<div id="languages-list">
+			{{#each this}}
+				<section>
+					<header>
+						{{#if language}}
+							<h3>{{language}}</h3>
+						{{/if}}
+					</header>
+					{{#if fluency}}
+						<strong>Fluency:</strong> {{fluency}}
 					{{/if}}
-				</header>
-				{{#if fluency}}
-					<strong>Fluency:</strong> {{fluency}}
-				{{/if}}
-			</section>
-		{{/each}}
+				</section>
+			{{/each}}
+		</div>
 	</section>
 {{/ifwith}}

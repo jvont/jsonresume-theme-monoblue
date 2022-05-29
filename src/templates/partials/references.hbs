@@ -3,17 +3,19 @@
 		<header>
 			<h2>References</h2>
 		</header>
-		{{#each this}}
-			<section>
-				<header>
-					{{#if name}}
-						<h3>{{name}}</h3>
+		<div id="references-list">
+			{{#each this}}
+				<section>
+					<header>
+						{{#if name}}
+							<h3>{{name}}</h3>
+						{{/if}}
+					</header>
+					{{#if reference}}
+						<p>{{reference}}</p>
 					{{/if}}
-				</header>
-				{{#if reference}}
-					<p>{{reference}}</p>
-				{{/if}}
-			</section>
-		{{/each}}
+				</section>
+			{{/each}}
+		</div>
 	</section>
 {{/ifwith}}

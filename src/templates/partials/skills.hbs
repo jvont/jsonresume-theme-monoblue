@@ -3,24 +3,24 @@
 		<header>
 			<h2>Skills</h2>
 		</header>
-		{{#each this}}
-			<section>
-				<header>
+		<div id="skills-list">
+			{{#each this}}
+				<section>
 					{{#if name}}
 						<h3>{{name}}</h3>
 					{{/if}}
-				</header>
-				{{#if level}}
-					{{level}}
-				{{/if}}
-				{{#ifwith keywords}}
-					<ul>
-						{{#each this}}
-							<li>{{.}}</li>
-						{{/each}}
-					</ul>
-				{{/ifwith}}
-			</section>
-		{{/each}}
+					{{#if level}}
+						{{level}}
+					{{/if}}
+					{{#ifwith keywords}}
+						<ul>
+							{{#each this}}
+								<li>{{.}}</li>
+							{{/each}}
+						</ul>
+					{{/ifwith}}
+				</section>
+			{{/each}}
+		</div>
 	</section>
 {{/ifwith}}
