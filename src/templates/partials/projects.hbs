@@ -3,9 +3,9 @@
 		<header>
 			<h2>Projects</h2>
 		</header>
-		<div id="projects-list">
+		<ul id="projects-list">
 			{{#each this}}
-				<section>
+				<li>
 					<header>
 						<div class="flex-between">
 							<h3>
@@ -55,8 +55,8 @@
 							{{/each}}
 						</ul>
 					{{/ifwith}}
-				</section>
+				</li>
 			{{/each}}
-		</div>
+		</ul>
 	</section>
 {{/ifwith}}

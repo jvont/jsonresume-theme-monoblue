@@ -7,16 +7,12 @@ strong {
   font-weight: bold;
 }
 
-dl {
-  list-style-type: none;
-}
-
 a {
-  color: $dark-aqua;
+  color: $light-aqua;
   text-decoration: none;
 
   &:hover {
-    color: $light-aqua;
+    color: $dark-aqua;
     text-decoration: underline;
   }
 }

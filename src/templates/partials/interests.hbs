@@ -3,9 +3,9 @@
 		<header>
 			<h2>Interests</h2>
 		</header>
-		<div id="interests-list">
+		<ul id="interests-list">
 			{{#each this}}
-				<section>
+				<li>
 					<header>
 						{{#if name}}
 							<h3>{{name}}</h3>
@@ -18,8 +18,8 @@
 							{{/each}}
 						</ul>
 					{{/ifwith}}
-				</section>
+				</li>
 			{{/each}}
-		</div>
+		</ul>
 	</section>
 {{/ifwith}}

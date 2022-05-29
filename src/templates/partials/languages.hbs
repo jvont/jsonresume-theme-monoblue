@@ -3,9 +3,9 @@
 		<header>
 			<h2>Languages</h2>
 		</header>
-		<div id="languages-list">
+		<ul id="languages-list">
 			{{#each this}}
-				<section>
+				<li>
 					<header>
 						{{#if language}}
 							<h3>{{language}}</h3>
@@ -14,8 +14,8 @@
 					{{#if fluency}}
 						<strong>Fluency:</strong> {{fluency}}
 					{{/if}}
-				</section>
+				</li>
 			{{/each}}
-		</div>
+		</ul>
 	</section>
 {{/ifwith}}

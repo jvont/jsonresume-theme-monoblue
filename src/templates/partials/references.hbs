@@ -3,9 +3,9 @@
 		<header>
 			<h2>References</h2>
 		</header>
-		<div id="references-list">
+		<ul id="references-list">
 			{{#each this}}
-				<section>
+				<li>
 					<header>
 						{{#if name}}
 							<h3>{{name}}</h3>
@@ -14,8 +14,8 @@
 					{{#if reference}}
 						<p>{{reference}}</p>
 					{{/if}}
-				</section>
+				</li>
 			{{/each}}
-		</div>
+		</ul>
 	</section>
 {{/ifwith}}

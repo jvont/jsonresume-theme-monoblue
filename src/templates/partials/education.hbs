@@ -3,47 +3,49 @@
 		<header>
 			<h2>Education</h2>
 		</header>
-		{{#each this}}
-			<div id="education-list">
-				<header>
-					<div class="flex-between">
-						<h3>
-							{{#if studyType}}
-								<span>{{studyType}}</span>
-							{{/if}}
-							{{#if area}}
-								<span>{{area}}</span>
-							{{/if}}
-							{{#if area}}
-								<span>| {{institution}}</span>
-							{{/if}}
-						</h3>
-						<div>
-							{{#if startDate}}
-								<span>{{startDate}}</span>
-							{{/if}}
-							{{#if endDate}}
-								<span>- {{endDate}}</span>
-							{{else}}
-								<span>- Present</span>
-							{{/if}}
+		<ul id="education-list">
+			{{#each this}}
+				<li>
+					<header>
+						<div class="flex-between">
+							<h3>
+								{{#if studyType}}
+									<span>{{studyType}}</span>
+								{{/if}}
+								{{#if area}}
+									<span>{{area}}</span>
+								{{/if}}
+								{{#if area}}
+									<span>| {{institution}}</span>
+								{{/if}}
+							</h3>
+							<div>
+								{{#if startDate}}
+									<span>{{startDate}}</span>
+								{{/if}}
+								{{#if endDate}}
+									<span>- {{endDate}}</span>
+								{{else}}
+									<span>- Present</span>
+								{{/if}}
+							</div>
 						</div>
-					</div>
-					{{#if url}}
-						<a target="_blank" href="{{url}}">{{url}}</a>
+						{{#if url}}
+							<a target="_blank" href="{{url}}">{{url}}</a>
+						{{/if}}
+					</header>
+					{{#if score}}
+						<strong>Grade:</strong> {{score}}
 					{{/if}}
-				</header>
-				{{#if score}}
-					<strong>Grade:</strong> {{score}}
-				{{/if}}
-				{{#ifwith courses}}
-					<ul>
-						{{#each this}}
-							<li>{{.}}</li>
-						{{/each}}
-					</ul>
-				{{/ifwith}}
-			</div>
-		{{/each}}
+					{{#ifwith courses}}
+						<ul>
+							{{#each this}}
+								<li>{{.}}</li>
+							{{/each}}
+						</ul>
+					{{/ifwith}}
+				</li>
+			{{/each}}
+		</ul>
 	</section>
 {{/ifwith}}
