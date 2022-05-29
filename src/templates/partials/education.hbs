@@ -10,28 +10,34 @@
 						<div class="flex-between">
 							<h3>
 								{{#if studyType}}
-									<span>{{studyType}}</span>
-								{{/if}}
-								{{#if area}}
-									<span>{{area}}</span>
-								{{/if}}
-								{{#if area}}
-									<span>| {{institution}}</span>
+									{{studyType}}
+									{{#if area}}
+										<span>of {{area}}</span>
+									{{/if}}
+								{{else}}
+									{{area}}
 								{{/if}}
 							</h3>
-							<div>
-								{{#if startDate}}
-									<span>{{startDate}}</span>
-								{{/if}}
+							<h5>
+								{{startDate}}
 								{{#if endDate}}
 									<span>- {{endDate}}</span>
 								{{else}}
 									<span>- Present</span>
 								{{/if}}
-							</div>
+							</h5>
 						</div>
-						{{#if url}}
-							<a target="_blank" href="{{url}}">{{url}}</a>
+						{{#if institution}}
+							<h4>
+								{{institution}}
+								{{#if url}}
+									<a target="_blank" href="{{url}}">
+										<span class="fas fa-external-link-alt"></span>
+									</a>
+								{{/if}}
+							</h4>
+						{{else if url}}
+							<h4><a target="_blank" href="{{url}}">{{url}}</a></h4>
 						{{/if}}
 					</header>
 					{{#if score}}

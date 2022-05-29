@@ -10,25 +10,27 @@
 						<div class="flex-between">
 							<h3>
 								{{#if name}}
-									<span>{{name}}</span>
-								{{/if}}
-								{{#if entity}}
-									<span>| {{entity}}</span>
+									{{name}}
+									{{#if url}}
+										<a target="_blank" href="{{url}}">
+											<span class="fas fa-external-link-alt"></span>
+										</a>
+									{{/if}}
+								{{else if url}}
+									<a target="_blank" href="{{url}}">{{url}}</a>
 								{{/if}}
 							</h3>
-							<div>
-								{{#if startDate}}
-									<span>{{startDate}}</span>
-								{{/if}}
+							<h5>
+								{{startDate}}
 								{{#if endDate}}
 									<span>- {{endDate}}</span>
 								{{else}}
 									<span>- Present</span>
 								{{/if}}
-							</div>
+							</h5>
 						</div>
-						{{#if url}}
-							<a target="_blank" href="{{url}}">{{url}}</a>
+						{{#if entity}}
+							<h4>{{entity}}</h4>
 						{{/if}}
 					</header>
 					{{#if description}}
