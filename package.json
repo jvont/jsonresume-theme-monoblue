@@ -1,7 +1,7 @@
 {
-  "name": "jsonresume-theme-bare",
+  "name": "jsonresume-theme-monoblue",
   "version": "1.0.0",
-  "description": "Minimalistic theme for JSON Resume",
+  "description": "Monospaced theme for JSON Resume",
   "main": "index.js",
   "author": "Johann von Tiesenhausen",
   "scripts": {
