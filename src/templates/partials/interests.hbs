@@ -1,8 +1,6 @@
 {{#ifwith resume.interests}}
 	<section>
-		<header>
-			<h2>Interests</h2>
-		</header>
+		{{> section-header name="Interests"}}
 		<ul id="interests-list">
 			{{#each this}}
 				<li>
