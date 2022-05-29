@@ -1,33 +1,61 @@
+body {
+  color: $dark-slate;
+  width: 8.5in;
+  height: auto;
+}
+
 body > header, nav {
-  color: #ffffff;
+  color: #FFFFFF;
   width: 100%;
-  margin: 0;
-  padding: 0 $outer-spacing;
+  padding: $inner-spacing $outer-spacing;
 }
 
 body > header {
-  background-color: $header-color;
-  padding-top: $inner-spacing;
-  padding-bottom: $inner-spacing;
+  background-color: $light-slate;
 
-  & > h2 {
-    color: $accent-color;
+  h2 {
+    color: $dark-aqua;
   }
 
-  & > p {
+  p {
     text-align: justify;
     margin-top: 1em;
   }
 }
 
 nav {
-  background-color: $profiles-color;
-  padding-top: $inner-spacing;
-  padding-bottom: $inner-spacing;
+  background-color: $dark-slate;
 
-  display: grid;
-  grid-template-columns: auto auto;
-  justify-items: start;
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-items: start;
+  }
 }
 
+main {
+  background-color: #FFFFFF;
+  margin: 0 $outer-spacing;
 
+  & > section {
+    margin: $inner-spacing 0;
+  }
+
+  h2 {
+    color: $dark-slate;
+  }
+
+  h3 {
+    color: $light-slate;
+    font-size: 13pt;
+  }
+}
+
+#skills-list, #languages-list, #interests-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1em;
+}

@@ -1,37 +1,27 @@
 * {
   margin: 0;
   box-sizing: border-box;
-  // border: 1px solid red;
-}
-
-body {
-  width: 8.5in;
-  height: auto;
-  
-  & > section {
-    margin: $inner-spacing $outer-spacing;
-  
-    & > header > h2 {
-      color: $accent-color;
-    }
-  }
 }
 
 strong {
   font-weight: bold;
 }
 
+dl {
+  list-style-type: none;
+}
+
 a {
-  color: $accent-color;
+  color: $dark-aqua;
   text-decoration: none;
 
   &:hover {
-    color: $hover-color;
+    color: $light-aqua;
     text-decoration: underline;
   }
 }
 
-.split {
+.flex-between {
   display: flex;
   justify-content: space-between;
 }
