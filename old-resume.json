@@ -1,104 +1,96 @@
 {
   "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
   "basics": {
-    "name": "Richard Hendriks",
+    "name": "John Doe",
     "label": "Programmer",
-    "picture": "http://www.piedpiper.com/app/themes/pied-piper/dist/images/richard.png",
-    "email": "richard.hendriks@piedpiper.com",
+    "image": "",
+    "email": "john@gmail.com",
     "phone": "(912) 555-4321",
-    "url": "http://piedpiper.com",
-    "summary": "Richard hails from Tulsa. He has earned degrees from the University of Oklahoma and Stanford. (Go Sooners and Cardinals!) Before starting Pied Piper, he worked for Hooli as a part time software developer. While his work focuses on applied information theory, mostly optimizing lossless compression schema of both the length-limited and adaptive variants, his non-work interests range widely, everything from quantum computing to chaos theory. He could tell you about it, but THAT would NOT be a “length-limited” conversation!",
+    "url": "https://johndoe.com",
+    "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     "location": {
-      "address": "Newell Road",
-      "postalCode": "94303",
-      "city": "Palo Alto",
+      "address": "2712 Broadway St",
+      "postalCode": "CA 94115",
+      "city": "San Francisco",
       "countryCode": "US",
-      "region": "CA"
+      "region": "California"
     },
     "profiles": [
       {
         "network": "Twitter",
-        "username": "siliconHBO",
-        "url": "https://twitter.com/siliconHBO"
+        "username": "atjohn",
+        "url": "https://twitter.com/john"
       },
       {
-        "network": "Facebook",
-        "username": "SiliconHBO",
-        "url": "https://www.facebook.com/SiliconHBO"
-      },
-      {
-        "network": "Instagram",
-        "username": "siliconhbo",
-        "url": "https://www.instagram.com/siliconhbo/"
+        "network": "Github",
+        "username": "john42",
+        "url": "https://github.com/john"
       }
     ]
   },
   "work": [
     {
-      "company": "Pied Piper",
-      "position": "CEO/President",
-      "website": "http://piedpiper.com",
-      "startDate": "2014-04-13",
-      "summary": "Pied Piper is a multi-platform technology based on a proprietary universal compression algorithm that has consistently fielded high Weisman Scores™ that are not merely competitive, but approach the theoretical limit of lossless compression.",
-      "highlights": [
-        "Build an algorithm for artist to detect if their music was violating copy right infringement laws",
-        "Successfully won Techcrunch Disrupt",
-        "Optimized an algorithm that holds the current world record for Weisman Scores"
-      ]
-    },
-    {
-      "company": "Hooli",
-      "position": "Software Engineer",
-      "website": "http://www.hooli.xyz/",
+      "name": "Company",
+      "position": "President",
+      "url": "https://company.com",
       "startDate": "2013-01-01",
-      "endDate": "2014-04-06",
-      "summary": "Worked on optimizing the backend algorithms for Hooli"
+      "endDate": "2014-01-01",
+      "summary": "Description…",
+      "highlights": [
+        "Started the company"
+      ]
     }
   ],
   "volunteer": [
     {
-      "organization": "CoderDojo",
-      "position": "Teacher",
-      "website": "http://coderdojo.com/",
+      "organization": "Organization",
+      "position": "Volunteer",
+      "url": "https://organization.com/",
       "startDate": "2012-01-01",
       "endDate": "2013-01-01",
-      "summary": "Global movement of free coding clubs for young people.",
+      "summary": "Description…",
       "highlights": [
-        "Awarded 'Teacher of the Month'"
+        "Awarded 'Volunteer of the Month'"
       ]
     }
   ],
   "education": [
     {
-      "institution": "Stanford",
-      "area": "Computer Science",
-      "studyType": "B.S",
-      "location": "Palo Alto, CA",
-      "specialization": "Machine Learning",
-      "startDate": "2011-06-01",
-      "endDate": "2014-01-01",
-      "gpa": "GPA 4.0",
+      "institution": "University",
+      "url": "https://institution.com/",
+      "area": "Software Development",
+      "studyType": "Bachelor",
+      "startDate": "2011-01-01",
+      "endDate": "2013-01-01",
+      "score": "4.0",
       "courses": [
-        "DB1101 - Basic SQL",
-        "CS2011 - Java Introduction"
+        "DB1101 - Basic SQL"
       ]
     }
   ],
   "awards": [
     {
-      "title": "Digital Compression Pioneer Award",
+      "title": "Award",
       "date": "2014-11-01",
-      "awarder": "Techcrunch",
+      "awarder": "Company",
       "summary": "There is no spoon."
+    }
+  ],
+  "certificates": [
+    {
+      "name": "Certificate",
+      "date": "2021-11-07",
+      "issuer": "Company",
+      "url": "https://certificate.com"
     }
   ],
   "publications": [
     {
-      "name": "Video compression for 3d media",
-      "publisher": "Hooli",
+      "name": "Publication",
+      "publisher": "Company",
       "releaseDate": "2014-10-01",
-      "website": "http://en.wikipedia.org/wiki/Silicon_Valley_(TV_series)",
-      "summary": "Innovative middle-out compression algorithm that changes the way we store data."
+      "url": "https://publication.com",
+      "summary": "Description…"
     }
   ],
   "skills": [
@@ -108,16 +100,15 @@
       "keywords": [
         "HTML",
         "CSS",
-        "Javascript"
+        "JavaScript"
       ]
     },
     {
-      "name": "Compression",
-      "level": "Master",
+      "name": "Systems Programming",
+      "level": "Beginner",
       "keywords": [
-        "Mpeg",
-        "MP4",
-        "GIF"
+        "C/C++",
+        "Linux"
       ]
     }
   ],
@@ -125,6 +116,10 @@
     {
       "language": "English",
       "fluency": "Native speaker"
+    },
+    {
+      "language": "French",
+      "fluency": "Beginner"
     }
   ],
   "interests": [
@@ -134,12 +129,39 @@
         "Ferrets",
         "Unicorns"
       ]
+    },
+    {
+      "name": "Dancing",
+      "keywords": [
+        "Tango",
+        "Swing"
+      ]
     }
   ],
   "references": [
     {
-      "name": "Erlich Bachman",
-      "reference": "It is my pleasure to recommend Richard. That is all."
+      "name": "Jane Doe",
+      "reference": "Reference…"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Project",
+      "description": "Description…",
+      "highlights": [
+        "Won award at AIHacks 2016"
+      ],
+      "keywords": [
+        "HTML"
+      ],
+      "startDate": "2019-01-01",
+      "endDate": "2021-01-01",
+      "url": "https://project.com/",
+      "roles": [
+        "Team Lead"
+      ],
+      "entity": "Entity",
+      "type": "application"
     }
   ]
 }

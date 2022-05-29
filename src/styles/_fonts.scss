@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
 
 body {
-  font-family: 'Fira Sans', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 11pt;
-  font-weight: 100;
+  font-family: Consolas, monospace;
+  // font-family: 'Ubuntu Mono', monospace;
+  color: $dark-slate;
+  font-size: 10pt;
 }
 
 h1 {
@@ -12,4 +13,21 @@ h1 {
 
 h2 {
   font-size: 18pt;
+}
+
+h3 {
+  font-size: 11pt;
+  font-style: bold;
+}
+
+h4 {
+  color: $medium-slate;
+  font-size: 11pt;
+  font-weight: 500;
+}
+
+h5 {
+  color: $light-slate;
+  font-size: 9pt;
+  font-style: italic;
 }

@@ -2,16 +2,16 @@ body {
   color: $dark-slate;
   width: 8.5in;
   height: auto;
-}
 
-body > header, nav {
-  color: #FFFFFF;
-  width: 100%;
-  padding: $inner-spacing $outer-spacing;
+  & > header, nav {
+    color: #ffffff;
+    width: 100%;
+    padding: $inner-spacing $outer-spacing;
+  }
 }
 
 body > header {
-  background-color: $light-slate;
+  background-color: $medium-slate;
 
   h2 {
     color: $dark-aqua;
@@ -37,30 +37,29 @@ nav {
 }
 
 main {
-  background-color: #FFFFFF;
-  margin: 0 $outer-spacing;
-
+  margin: $inner-spacing $outer-spacing;
+  
   & > section {
-    margin: $inner-spacing 0;
+    margin-bottom: 1em;
 
     & > ul {
       list-style-type: none;
       padding-left: 0;
 
+      // margin: 1em 0;
+
+      & > li {
+        margin: 1em 0;
+      }
+
       ul {
+        padding-left: 1.5em;
+      }
+
+      & > li > ul {
         list-style-type: disc;
-        padding-left: 2em;
       }
     }
-  }
-
-  h2 {
-    color: $dark-slate;
-  }
-
-  h3 {
-    color: $light-slate;
-    font-size: 13pt;
   }
 }
 
@@ -68,4 +67,5 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 1em;
+  margin-bottom: -1em;
 }

@@ -17,7 +17,15 @@ a {
   }
 }
 
+hr {
+  height: 2px;
+  border: none;
+  background-color: $light-aqua;
+}
+
 .flex-between {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
