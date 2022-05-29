@@ -1,13 +1,7 @@
-body {
-  color: $dark-slate;
-  width: 8.5in;
-  height: auto;
-
-  & > header, nav {
-    color: #ffffff;
-    width: 100%;
-    padding: $inner-spacing $outer-spacing;
-  }
+body > header, nav {
+  color: #ffffff;
+  width: 100%;
+  padding: $inner-spacing $outer-spacing;
 }
 
 body > header {

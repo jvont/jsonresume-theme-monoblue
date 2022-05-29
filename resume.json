@@ -1,230 +1,167 @@
 {
   "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
   "basics": {
-    "name": "Johann von Tiesenhausen",
-    "label": "",
+    "name": "John Doe",
+    "label": "Programmer",
     "image": "",
-    "email": "johannvont@gmail.com",
-    "phone": "(647) 230-5711",
-    "url": "https://jvont.github.io",
-    "summary": "I'm a lifelong learner who is passionate about software development, with an interest in systems programming for a range of applications. I enjoy sharing my enthusiasm by creating tutorials for peers and mentoring young learners. I love coding in my free time, learning new programming languages and codebases, and working on personal projects.",
+    "email": "john@gmail.com",
+    "phone": "(912) 555-4321",
+    "url": "https://johndoe.com",
+    "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     "location": {
-      "city": "Kingston",
-      "region": "Ontario"
+      "address": "2712 Broadway St",
+      "postalCode": "CA 94115",
+      "city": "San Francisco",
+      "countryCode": "US",
+      "region": "California"
     },
     "profiles": [
       {
-        "network": "Github",
-        "username": "Personal",
-        "url": "https://github.com/jvont/"
+        "network": "Twitter",
+        "username": "atjohn",
+        "url": "https://twitter.com/john"
       },
       {
         "network": "Github",
-        "username": "Work",
-        "url": "https://github.com/13jvt/"
+        "username": "john42",
+        "url": "https://github.com/john"
       }
     ]
   },
   "work": [
     {
-      "name": "Queen's University, Ingenuity Labs Research Institute",
-      "location": "Kingston, Canada",
-      "position": "Research Assistant",
-      "url": "https://ingenuitylabs.queensu.ca/",
-      "startDate": "2019-01",
-      "endDate": "2022-05",
-      "summary": "",
+      "name": "Company",
+      "position": "President",
+      "url": "https://company.com",
+      "startDate": "2013-01-01",
+      "endDate": "2014-01-01",
+      "summary": "Description…",
       "highlights": [
-        "Designed and built a custom wearable glove device for human-robot interaction",
-        "Implemented a system for controlling the excavation process of a front-end loader",
-        "Developed a novel dynamic hand gesture recognition system using Dynamic Time Warping",
-        "Ran tutorials to help incoming graduate students develop a familiarity with ROS and related tooling"
-      ]
-    },
-    {
-      "name": "Queen's University, Department of Mechanical and Materials Engineering",
-      "location": "Kingston, Canada",
-      "position": "Teaching Assistant",
-      "startDate": "2018-09",
-      "endDate": "2020-05",
-      "summary": "",
-      "highlights": [
-        "Ran tutorials and labs for two courses, MECH 399: Mech Eng Lab II and MECH 496: Musculoskeletal Biomechanics, over multiple semesters",
-        "Assisted students in achieving key learning outcomes through guided learning"
-      ]
-    },
-    {
-      "name": "Toronto Police Lifeguard Service",
-      "location": "Toronto, Canada",
-      "position": "Waterfront Lifeguard",
-      "startDate": "2015-05",
-      "endDate": "2018-09",
-      "summary": "",
-      "highlights": [
-        "Developed leadership skills by mentoring new lifeguards",
-        "Served as a representative for the City of Toronto, engaging with the public"
-      ]
-    },
-    {
-      "name": "Camp Kandalore",
-      "location": "Toronto, Canada",
-      "position": "Camp Counsellor/Counsellor-in-Training",
-      "startDate": "2013-05",
-      "endDate": "2014-09",
-      "summary": "",
-      "highlights": [
-        "Helped create a positive outdoor experience for young campers aged 10 to 16",
-        "Co-ran canoe camping trips, assisting in the planning and preparation for canoe trips including flat or white water spaddling"
+        "Started the company"
       ]
     }
   ],
   "volunteer": [
     {
-      "organization": "CoderDojo",
-      "position": "Mentor",
-      "url": "https://coderdojo.com/",
-      "startDate": "2021",
-      "summary": "",
+      "organization": "Organization",
+      "position": "Volunteer",
+      "url": "https://organization.com/",
+      "startDate": "2012-01-01",
+      "endDate": "2013-01-01",
+      "summary": "Description…",
       "highlights": [
-        "Helped young learners develop a passion for coding",
-        "Used Python and Lua to work on a variety of creative projects, focusing on key skills such as reading code/documentation, understanding error messages, and writing reusable code"
+        "Awarded 'Volunteer of the Month'"
       ]
     }
   ],
   "education": [
     {
-      "institution": "Queen's University",
-      "area": "Computing",
-      "studyType": "Bachelor of",
-      "startDate": "2021-01"
-    },
-    {
-      "institution": "Queen's University",
-      "area": "Applied Science, Mechanical and Materials Engineering",
-      "studyType": "Master of",
-      "startDate": "2019-01"
-    },
-    {
-      "institution": "Queen's University",
-      "area": "Applied Science, Mechanical and Materials Engineering",
-      "studyType": "Bachelor of",
-      "startDate": "2014-09",
-      "endDate": "2018-05"
-    },
-    {
-      "institution": "The York School",
-      "url": "https://www.yorkschool.com/",
-      "area": "",
-      "studyType": "IB Diploma",
-      "startDate": "2002-09",
-      "endDate": "2014-06"
+      "institution": "University",
+      "url": "https://institution.com/",
+      "area": "Software Development",
+      "studyType": "Bachelor",
+      "startDate": "2011-01-01",
+      "endDate": "2013-01-01",
+      "score": "4.0",
+      "courses": [
+        "DB1101 - Basic SQL"
+      ]
     }
   ],
-  "awards": [],
-  "certificates": [],
+  "awards": [
+    {
+      "title": "Award",
+      "date": "2014-11-01",
+      "awarder": "Company",
+      "summary": "There is no spoon."
+    }
+  ],
+  "certificates": [
+    {
+      "name": "Certificate",
+      "date": "2021-11-07",
+      "issuer": "Company",
+      "url": "https://certificate.com"
+    }
+  ],
   "publications": [
     {
-      "name": "Hand Gesture-Based Control of a Front-End Loader",
-      "publisher": "CCECE",
-      "releaseDate": "2020-11-19",
-      "url": "https://ieeexplore.ieee.org/document/9255828",
-      "summary": "An overview of the designed and application of an instrumented glove to the excavation process of a Front-End Loader. A set of hand gestures were used as supervisory input to control loader states and manipulate bucket curl during digging."
+      "name": "Publication",
+      "publisher": "Company",
+      "releaseDate": "2014-10-01",
+      "url": "https://publication.com",
+      "summary": "Description…"
     }
   ],
   "skills": [
     {
-      "name": "Robotics",
+      "name": "Web Development",
+      "level": "Master",
       "keywords": [
-        "ROS",
-        "Python",
-        "C++"
+        "HTML",
+        "CSS",
+        "JavaScript"
       ]
     },
     {
       "name": "Systems Programming",
+      "level": "Beginner",
       "keywords": [
-        "C",
-        "Real-Time Systems",
-        "Embedded Devices"
-      ]
-    },
-    {
-      "name": "Programming Tools",
-      "keywords": [
-        "Linux",
-        "Make",
-        "Node.js",
-        "Python packages, Ctypes FFI"
+        "C/C++",
+        "Linux"
       ]
     }
   ],
-  "languages": [],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Native speaker"
+    },
+    {
+      "language": "French",
+      "fluency": "Beginner"
+    }
+  ],
   "interests": [
     {
-      "name": "Programming Language Theory & Design",
+      "name": "Wildlife",
       "keywords": [
-        "Lua",
-        "CPython",
-        "Haskell",
-        "Rust"
+        "Ferrets",
+        "Unicorns"
       ]
     },
     {
-      "name": "Computer Graphics",
+      "name": "Dancing",
       "keywords": [
-        "OpenGL 3",
-        "SDL2",
-        "Godot Engine"
-      ]
-    },
-    {
-      "name": "Web Development",
-      "keywords": [
-        "HTML",
-        "CSS",
-        "Javascript"
+        "Tango",
+        "Swing"
       ]
     }
   ],
-  "references": [],
+  "references": [
+    {
+      "name": "Jane Doe",
+      "reference": "Reference…"
+    }
+  ],
   "projects": [
     {
-      "name": "Scheme-y Programming Language",
-      "entity": "",
-      "description": "scheme-y is an implementation of the Scheme programming language (dialect of LISP) written in C99 and adhering to a subset of R7RS (Revised Report on the Algorithmic Language Scheme).",
+      "name": "Project",
+      "description": "Description…",
       "highlights": [
-        "Implementation of the Scheme programming language (dialect of LISP) written in C99 and adhering to a subset of R7RS (Revised Report on the Algorithmic Language Scheme)",
-        "Ongoing personal project to learn the fundamentals of programming language design including parsing techniques, virtual machine design, and automatic memory management.",
-        "Wrote a novel generational garbage collector using multiple heap semi-spaces for efficient copying collection based on Cheney's Algorithm"
+        "Won award at AIHacks 2016"
       ],
-      "keywords": [],
-      "startDate": "2022-02",
-      "url": "https://github.com/jvont/scheme-y",
+      "keywords": [
+        "HTML"
+      ],
+      "startDate": "2019-01-01",
+      "endDate": "2021-01-01",
+      "url": "https://project.com/",
       "roles": [
-        "Sole Developer"
+        "Team Lead"
       ],
-      "type": "Programming Language"
-    },
-    {
-      "name": "DTW-live Scikit-Learn Plugin",
-      "entity": "Ingenuity Labs Research Institute",
-      "description": "",
-      "highlights": [
-        "dtw-live is a Python library and scikit-learn plugin for real-time segmentation and classification using Dynamic Time Warping, developed over the course of a Master's Degree",
-        "Implemented a custom classifier with serialization/deserialization functionality, dataset preprocessing, feature extraction, and visualizations",
-        "Wrote optimized C code for calculating Dynamic Time Warping cost matrices in a real-time context using SPRING-DTW"
-      ],
-      "keywords": [],
-      "startDate": "2020-09",
-      "endDate": "2022-05",
-      "url": "https://github.com/offroad-robotics/dtw-live",
-      "roles": [
-        "Developer", "Master's Student"
-      ],
-      "type": "Python Library"
+      "entity": "Entity",
+      "type": "application"
     }
-  ],
-  "meta": {
-    "version": "v1.0.0"
-  }
+  ]
 }
