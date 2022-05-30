@@ -18,11 +18,20 @@ strong {
 }
 
 a {
-  color: $light-aqua;
+  color: $sky-blue;
   text-decoration: none;
 
+  .fa-fw {
+    font-size: 90%;
+    color: $medium-slate;
+
+    &:hover {
+      color: $sky-blue;
+    }
+  }
+
   &:hover {
-    color: $dark-aqua;
+    color: $sky-blue;
     text-decoration: underline;
   }
 }
@@ -30,7 +39,7 @@ a {
 hr {
   height: 2px;
   border: none;
-  background-color: $light-aqua;
+  background-color: $sky-blue;
 }
 
 .flex-between {
