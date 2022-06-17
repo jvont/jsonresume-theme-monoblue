@@ -6,6 +6,8 @@ Theme for jsonresume written using Handlebars and SCSS. Uses monospaced fonts an
 
 See the [JSON Resume homepage](https://jsonresume.org/getting-started/) for more info on the JSON Resume schema and using [resume-cli](https://www.npmjs.com/package/resume-cli).
 
+![sample resume](sample-resume.png)
+
 Install this package via npm:
 
 ```
